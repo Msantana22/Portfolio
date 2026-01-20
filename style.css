@@ -534,6 +534,58 @@ span {
   font-size: 1.8rem;
 }
 
+.swipe-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;;
+  color: #aaa;
+  opacity: 0.8;
+  animation: fadeIn 1s ease;
+}
+
+.swipe-indicator i {
+  font-size: 1.6rem;
+  animation: swipe 1.5s infinite ease-in-out;
+}
+
+.swipe-indicator i:first-child {
+  animation-delay: 0s;
+}
+
+.swipe-indicator i:last-child {
+  animation-delay: 0.3s;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
 .btnCourses {
   position: absolute;
   top: 50%;
@@ -567,10 +619,25 @@ span {
   #next {
     display: none;
   }
+
   .courses-item {
-    min-width: 530px;
+    min-width: 370px;
+    min-height: 340px;
+  }
+
+  .courses-item-img {
+    width: 122%;
+    height: 245px;
+  }
+  
+}
+
+@media (min-width: 900px) {
+  .swipe-indicator {
+    display: none;
   }
 }
+
 
 #star {
   color: gold;
@@ -745,8 +812,6 @@ span {
   html {
     font-size: 55%;
   }
-
-
 }
 
 @media (max-width: 1184px) {
@@ -878,6 +943,28 @@ span {
   .home-img img {
     width: 56vw;
   }
+
+  .heading {
+    font-size: 5rem;
+  }
+
+  .courses-logos [alt="Alura"] {
+    width: 50px;
+}
+
+.courses-logos [alt="Udemy"] {
+  width: 80px;
+}
+
+.courses-logos [alt="Anhanguera"] {
+  width: 99px;
+}
+
+  .courses-logos i {
+    margin-top: 7.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 }
 
 .experience {
@@ -963,7 +1050,6 @@ span {
   width: 90px;
   filter: brightness(0.95);
 }
-
 
 .exp-logo:hover {
   transform: scale(1.05);
