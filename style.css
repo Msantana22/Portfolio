@@ -146,7 +146,6 @@ span {
   max-width: 1000px;
 }
 
-
 .social-icons a {
   display: inline-flex;
   justify-content: center;
@@ -630,27 +629,26 @@ span {
   }
 
   .carousel {
-    overflow-x: auto; 
+    overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* iOS */
     padding-bottom: 10px;
   }
-  
+
   /* trilho da barra */
   .carousel::-webkit-scrollbar-track {
     border-radius: 10px;
   }
-  
+
   /* barra (thumb) */
   .carousel::-webkit-scrollbar-thumb {
-    border-radius: 10px; 
+    border-radius: 10px;
     transition: background 0.3s;
   }
-  
+
   .courses-item {
     scroll-snap-align: start;
   }
-  
 }
 
 @media (min-width: 900px) {
@@ -658,7 +656,6 @@ span {
     display: none;
   }
 }
-
 
 #star {
   color: gold;
@@ -702,9 +699,9 @@ span {
   resize: none;
 }
 
-#status{
+#status {
   font-size: 16px;
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .contact-info {
@@ -885,10 +882,6 @@ span {
     padding: 2rem 3%;
   }
 
-  .experience {
-    padding: 8rem 5%;
-  }
-
   .experience .heading {
     font-size: 4.5rem;
   }
@@ -971,21 +964,33 @@ span {
 
   .courses-logos [alt="Alura"] {
     width: 50px;
-}
+  }
 
-.courses-logos [alt="Udemy"] {
-  width: 80px;
-}
+  .courses-logos [alt="Udemy"] {
+    width: 80px;
+  }
 
-.courses-logos [alt="Anhanguera"] {
-  width: 99px;
-}
+  .courses-logos [alt="Anhanguera"] {
+    width: 99px;
+  }
 
   .courses-logos i {
     margin-top: 7.5rem;
     margin-left: 3rem;
     margin-right: 3rem;
-}
+  }
+  .experience {
+    padding: 8rem 3% !important;
+  }
+
+  .exp-description {
+    margin-top: 14px !important;
+    line-height: 1.7 !important;
+    font-size: 1.9rem !important;
+  }
+  .exp-card {
+    padding: 2rem 2rem !important;
+  }
 }
 
 .experience {
@@ -1024,27 +1029,19 @@ span {
   /* Visual profissional */
   background: rgba(15, 15, 22, 0.75);
   backdrop-filter: blur(14px);
- -webkit-backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 
-  box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.45),
-    inset 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), inset 0 0 0 rgba(0, 0, 0, 0);
 
-  transition: 
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 /* 🔹 Efeito de brilho discreto ao passar o mouse */
 .exp-card:hover {
   transform: translateY(-12px) scale(1.02);
 
-  box-shadow:
-    0 30px 70px rgba(0, 0, 0, 0.7),
-    0 0 35px rgba(255, 140, 0, 0.9),
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), 0 0 35px rgba(255, 140, 0, 0.9),
     0 0 70px rgba(255, 140, 0, 0.5);
-
 }
 
 .exp-card::before {
