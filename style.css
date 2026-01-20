@@ -495,7 +495,6 @@ span {
 .carousel {
   display: flex;
   overflow: hidden;
-  scroll-behavior: smooth;
   border-radius: 20px;
 }
 
@@ -541,7 +540,7 @@ span {
   gap: 1rem;
   margin-top: 1.2rem;
   font-size: 1.4rem;
-  font-weight: 600;;
+  font-weight: 600;
   color: #aaa;
   opacity: 0.8;
   animation: fadeIn 1s ease;
@@ -628,6 +627,28 @@ span {
   .courses-item-img {
     width: 122%;
     height: 245px;
+  }
+
+  .carousel {
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* iOS */
+    padding-bottom: 10px;
+  }
+  
+  /* trilho da barra */
+  .carousel::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* barra (thumb) */
+  .carousel::-webkit-scrollbar-thumb {
+    border-radius: 10px; 
+    transition: background 0.3s;
+  }
+  
+  .courses-item {
+    scroll-snap-align: start;
   }
   
 }
