@@ -259,7 +259,7 @@ span {
   }
   81%,
   100% {
-    content: "Clean Code | SOLID | Design Patterns";
+    content: "Clean Code | SOLID";
   }
 }
 
@@ -824,6 +824,15 @@ span {
   .navbar a {
     margin-left: 2rem;
   }
+
+  .home-content h3{
+    font-size: 3rem;
+  }
+
+  .home-content h1{
+    font-size: 6rem;
+  }
+
 }
 
 @media (max-width: 1285px) {
